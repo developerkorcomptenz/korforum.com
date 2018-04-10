@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model backend\models\Wiki */
 
 $this->title = $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Wikis', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Blogs', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 /*echo "<pre>";
 print_r($model);*/
@@ -19,12 +19,10 @@ print_r($model);*/
                     <h1><?= Html::encode($this->title) ?></h1>
                 </div>
                 By <?php echo $model->user->username;?> , Posted on: <?php echo Yii::$app->formatter->asDate($model->created_at);?>
-                <div class="wiki-image">
-                    <?php
-                    $url = Yii::$app->request->hostInfo; ?>
+                <div class="wiki-image">                
                     <div class="text-center">
                         <div class="row">
-                            <img src="<?php echo $url."/korforum.com/backend/web/images/". $model->featured_image ;?>" alt="<?php echo $model->featured_image ;?>" />
+                            <img src="<?php echo Yii::$app->urlManager->createUrl("/backend/web/images/". $model->featured_image); ?>" alt="<?php echo $model->featured_image ;?>" />
                         </div>
                     </div>
                 </div>

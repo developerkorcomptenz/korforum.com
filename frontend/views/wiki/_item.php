@@ -6,11 +6,9 @@ use yii\helpers\Url;
     <div class="wiki-box">
         <div class="col-sm-4">
             <div class="wiki-image">
-                <?php
-                $url = Yii::$app->request->hostInfo; ?>
                 <div class="text-center">
                     <div class="row">
-                        <img src="<?php echo $url."/korforum.com/backend/web/images/". $model->featured_image ;?>" alt="<?php echo $model->featured_image ;?>" />
+                        <img src="<?php echo Yii::$app->urlManager->createUrl("/backend/web/images/". $model->featured_image); ?>" alt="<?php echo $model->featured_image ;?>" />
                     </div>
                 </div>
             </div>

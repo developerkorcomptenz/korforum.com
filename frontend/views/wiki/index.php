@@ -7,7 +7,7 @@ use yii\widgets\ListView;
 /* @var $searchModel backend\models\WikiSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Wikis';
+$this->title = 'Blogs';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="wiki-index">

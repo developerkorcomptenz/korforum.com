@@ -6,8 +6,8 @@ use common\models\Category;
 /* @var $this yii\web\View */
 /* @var $model common\models\Category */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = $model->category_name;
+$this->params['breadcrumbs'][] = $model->category_name;
 ?>
 <div class="category-view">
 	<div class="row">

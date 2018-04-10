@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\Question */
 
-$this->title = $mvQuestion->id;
+$this->title = $mvQuestion->question_title;
 $this->params['breadcrumbs'][] = ['label' => 'Questions', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $mvQuestion->question_title;
 $user_id='';
