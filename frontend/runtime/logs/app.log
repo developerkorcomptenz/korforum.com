@@ -24472,3 +24472,417 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1523352662.793
     'REQUEST_TIME' => 1523352662
 ]
+2018-04-10 15:54:26 [::1][1][eta2q6t2r247gp25if86je5tdo][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: C:/xampp/htdocs/korforum.com/frontend/web/assets in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#11 C:\xampp\htdocs\korforum.com\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\CategoryController))
+#15 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="cat...')
+#16 C:\xampp\htdocs\korforum.com\frontend\controllers\CategoryController.php(59): yii\base\Controller->render('view', Array)
+#17 [internal function]: frontend\controllers\CategoryController->actionView('1')
+#18 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#21 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/view', Array)
+#22 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\korforum.com\frontend\web\index.php(17): yii\base\Application->run()
+#24 {main}
+2018-04-10 15:54:23 [::1][1][eta2q6t2r247gp25if86je5tdo][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'eta2q6t2r247gp25if86je5tdo'
+    '_csrf-frontend' => '45619f62fead54885c6865adf641bb2a0db242d1ef2fc01ed3151f328e9ff6cfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Ng5D2QjaiRTxTyixVADpTd7CG7Ga1xpB\";}'
+    'advanced-backend' => '0nmge4qen308hjflkm7d1fg7gi'
+    '_csrf-backend' => '3086391cf265ab27eeaa2a168ec8c4ef1b1d1c7294de363045792dac95539562a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"HpAuovO4iCySy5WW-_ZLWIv2AF3BjlU9\";}'
+    '_identity-frontend' => '11f2a471a3a25daa6775aad376a02ee35e87c93d816c283c0869d8ec9b2c81aea:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RYTWb-KXhjuShXbF7ZJ4doE7Zq0YBZc7\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/question/create'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/question/view?id=6'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=eta2q6t2r247gp25if86je5tdo; _csrf-frontend=45619f62fead54885c6865adf641bb2a0db242d1ef2fc01ed3151f328e9ff6cfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Ng5D2QjaiRTxTyixVADpTd7CG7Ga1xpB%22%3B%7D; advanced-backend=0nmge4qen308hjflkm7d1fg7gi; _csrf-backend=3086391cf265ab27eeaa2a168ec8c4ef1b1d1c7294de363045792dac95539562a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22HpAuovO4iCySy5WW-_ZLWIv2AF3BjlU9%22%3B%7D; _identity-frontend=11f2a471a3a25daa6775aad376a02ee35e87c93d816c283c0869d8ec9b2c81aea%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RYTWb-KXhjuShXbF7ZJ4doE7Zq0YBZc7%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/frontend/web/index.php'
+    'REMOTE_PORT' => '59252'
+    'REDIRECT_URL' => '/korforum.com/frontend/web/category/view'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/korforum.com/category/view?id=1'
+    'SCRIPT_NAME' => '/korforum.com/frontend/web/index.php'
+    'PHP_SELF' => '/korforum.com/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1523355863.486
+    'REQUEST_TIME' => 1523355863
+]
+2018-04-10 15:54:40 [::1][1][eta2q6t2r247gp25if86je5tdo][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: C:/xampp/htdocs/korforum.com/frontend/web/assets in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#11 C:\xampp\htdocs\korforum.com\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#15 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#16 C:\xampp\htdocs\korforum.com\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#17 [internal function]: frontend\controllers\SiteController->actionIndex()
+#18 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#21 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#22 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\korforum.com\frontend\web\index.php(17): yii\base\Application->run()
+#24 {main}
+2018-04-10 15:54:40 [::1][1][eta2q6t2r247gp25if86je5tdo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'eta2q6t2r247gp25if86je5tdo'
+    '_csrf-frontend' => '45619f62fead54885c6865adf641bb2a0db242d1ef2fc01ed3151f328e9ff6cfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Ng5D2QjaiRTxTyixVADpTd7CG7Ga1xpB\";}'
+    'advanced-backend' => '0nmge4qen308hjflkm7d1fg7gi'
+    '_csrf-backend' => '3086391cf265ab27eeaa2a168ec8c4ef1b1d1c7294de363045792dac95539562a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"HpAuovO4iCySy5WW-_ZLWIv2AF3BjlU9\";}'
+    '_identity-frontend' => '11f2a471a3a25daa6775aad376a02ee35e87c93d816c283c0869d8ec9b2c81aea:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RYTWb-KXhjuShXbF7ZJ4doE7Zq0YBZc7\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/question/create'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=eta2q6t2r247gp25if86je5tdo; _csrf-frontend=45619f62fead54885c6865adf641bb2a0db242d1ef2fc01ed3151f328e9ff6cfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Ng5D2QjaiRTxTyixVADpTd7CG7Ga1xpB%22%3B%7D; advanced-backend=0nmge4qen308hjflkm7d1fg7gi; _csrf-backend=3086391cf265ab27eeaa2a168ec8c4ef1b1d1c7294de363045792dac95539562a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22HpAuovO4iCySy5WW-_ZLWIv2AF3BjlU9%22%3B%7D; _identity-frontend=11f2a471a3a25daa6775aad376a02ee35e87c93d816c283c0869d8ec9b2c81aea%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RYTWb-KXhjuShXbF7ZJ4doE7Zq0YBZc7%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/frontend/web/index.php'
+    'REMOTE_PORT' => '59257'
+    'REDIRECT_URL' => '/korforum.com/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/'
+    'SCRIPT_NAME' => '/korforum.com/frontend/web/index.php'
+    'PHP_SELF' => '/korforum.com/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1523355880.573
+    'REQUEST_TIME' => 1523355880
+]
+2018-04-10 15:55:17 [::1][1][eta2q6t2r247gp25if86je5tdo][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: C:/xampp/htdocs/korforum.com/frontend/web/assets in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#11 C:\xampp\htdocs\korforum.com\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#15 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#16 C:\xampp\htdocs\korforum.com\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#17 [internal function]: frontend\controllers\SiteController->actionIndex()
+#18 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#21 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#22 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\korforum.com\frontend\web\index.php(17): yii\base\Application->run()
+#24 {main}
+2018-04-10 15:55:17 [::1][1][eta2q6t2r247gp25if86je5tdo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'eta2q6t2r247gp25if86je5tdo'
+    '_csrf-frontend' => '45619f62fead54885c6865adf641bb2a0db242d1ef2fc01ed3151f328e9ff6cfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Ng5D2QjaiRTxTyixVADpTd7CG7Ga1xpB\";}'
+    'advanced-backend' => '0nmge4qen308hjflkm7d1fg7gi'
+    '_csrf-backend' => '3086391cf265ab27eeaa2a168ec8c4ef1b1d1c7294de363045792dac95539562a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"HpAuovO4iCySy5WW-_ZLWIv2AF3BjlU9\";}'
+    '_identity-frontend' => '11f2a471a3a25daa6775aad376a02ee35e87c93d816c283c0869d8ec9b2c81aea:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RYTWb-KXhjuShXbF7ZJ4doE7Zq0YBZc7\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/question/create'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=eta2q6t2r247gp25if86je5tdo; _csrf-frontend=45619f62fead54885c6865adf641bb2a0db242d1ef2fc01ed3151f328e9ff6cfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Ng5D2QjaiRTxTyixVADpTd7CG7Ga1xpB%22%3B%7D; advanced-backend=0nmge4qen308hjflkm7d1fg7gi; _csrf-backend=3086391cf265ab27eeaa2a168ec8c4ef1b1d1c7294de363045792dac95539562a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22HpAuovO4iCySy5WW-_ZLWIv2AF3BjlU9%22%3B%7D; _identity-frontend=11f2a471a3a25daa6775aad376a02ee35e87c93d816c283c0869d8ec9b2c81aea%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RYTWb-KXhjuShXbF7ZJ4doE7Zq0YBZc7%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/frontend/web/index.php'
+    'REMOTE_PORT' => '59268'
+    'REDIRECT_URL' => '/korforum.com/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/'
+    'SCRIPT_NAME' => '/korforum.com/frontend/web/index.php'
+    'PHP_SELF' => '/korforum.com/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1523355917.164
+    'REQUEST_TIME' => 1523355917
+]
+2018-04-10 15:55:58 [::1][1][eta2q6t2r247gp25if86je5tdo][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: C:/xampp/htdocs/korforum.com/frontend/web/assets in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#11 C:\xampp\htdocs\korforum.com\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#15 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#16 C:\xampp\htdocs\korforum.com\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#17 [internal function]: frontend\controllers\SiteController->actionIndex()
+#18 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#21 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#22 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\korforum.com\frontend\web\index.php(17): yii\base\Application->run()
+#24 {main}
+2018-04-10 15:55:58 [::1][1][eta2q6t2r247gp25if86je5tdo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'eta2q6t2r247gp25if86je5tdo'
+    '_csrf-frontend' => '45619f62fead54885c6865adf641bb2a0db242d1ef2fc01ed3151f328e9ff6cfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Ng5D2QjaiRTxTyixVADpTd7CG7Ga1xpB\";}'
+    'advanced-backend' => '0nmge4qen308hjflkm7d1fg7gi'
+    '_csrf-backend' => '3086391cf265ab27eeaa2a168ec8c4ef1b1d1c7294de363045792dac95539562a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"HpAuovO4iCySy5WW-_ZLWIv2AF3BjlU9\";}'
+    '_identity-frontend' => '11f2a471a3a25daa6775aad376a02ee35e87c93d816c283c0869d8ec9b2c81aea:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RYTWb-KXhjuShXbF7ZJ4doE7Zq0YBZc7\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/question/create'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=eta2q6t2r247gp25if86je5tdo; _csrf-frontend=45619f62fead54885c6865adf641bb2a0db242d1ef2fc01ed3151f328e9ff6cfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Ng5D2QjaiRTxTyixVADpTd7CG7Ga1xpB%22%3B%7D; advanced-backend=0nmge4qen308hjflkm7d1fg7gi; _csrf-backend=3086391cf265ab27eeaa2a168ec8c4ef1b1d1c7294de363045792dac95539562a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22HpAuovO4iCySy5WW-_ZLWIv2AF3BjlU9%22%3B%7D; _identity-frontend=11f2a471a3a25daa6775aad376a02ee35e87c93d816c283c0869d8ec9b2c81aea%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RYTWb-KXhjuShXbF7ZJ4doE7Zq0YBZc7%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/frontend/web/index.php'
+    'REMOTE_PORT' => '59276'
+    'REDIRECT_URL' => '/korforum.com/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/'
+    'SCRIPT_NAME' => '/korforum.com/frontend/web/index.php'
+    'PHP_SELF' => '/korforum.com/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1523355958.255
+    'REQUEST_TIME' => 1523355958
+]
