@@ -1,0 +1,540 @@
+2018-04-02 11:14:40 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(51): m140506_102106_rbac_init->getAuthManager()
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m140506_102106_rbac_init->up()
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('up', Array)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('up', Array)
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\korforum.com\yii(23): yii\base\Application->run()
+#12 {main}
+2018-04-02 11:14:32 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\RajanB\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGRWSTKOR23W10'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\web\\Git'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'C:\\Users\\RajanB'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\RajanB'
+    'HOSTNAME' => 'CGRWSTKOR23W10'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\RajanB\\AppData\\Local'
+    'LOGONSERVER' => '\\\\CGRDOMKOR1W16'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\RajanB\\OneDrive'
+    'ORIGINAL_PATH' => 'C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\RajanB\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\local\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\web\\Git\\usr\\bin\\vendor_perl;C:\\web\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 23 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '170a'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/c/xampp/htdocs/korforum.com'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\web\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'KORCOMPTENZ.COM'
+    'USERDOMAIN' => 'KORCOMPTENZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'KORCOMPTENZ'
+    'USERNAME' => 'RajanB'
+    'USERPROFILE' => 'C:\\Users\\RajanB'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\web\\Oracle\\VirtualBox\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522660472.0044
+    'REQUEST_TIME' => 1522660472
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2018-04-02 11:46:41 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(51): m140506_102106_rbac_init->getAuthManager()
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m140506_102106_rbac_init->up()
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('up', Array)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('up', Array)
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\korforum.com\yii(23): yii\base\Application->run()
+#12 {main}
+2018-04-02 11:46:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\RajanB\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGRWSTKOR23W10'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\web\\Git'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'C:\\Users\\RajanB'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\RajanB'
+    'HOSTNAME' => 'CGRWSTKOR23W10'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\RajanB\\AppData\\Local'
+    'LOGONSERVER' => '\\\\CGRDOMKOR1W16'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\RajanB\\OneDrive'
+    'ORIGINAL_PATH' => 'C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\RajanB\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\local\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\web\\Git\\usr\\bin\\vendor_perl;C:\\web\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 23 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '170a'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/c/xampp/htdocs/korforum.com'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\web\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'KORCOMPTENZ.COM'
+    'USERDOMAIN' => 'KORCOMPTENZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'KORCOMPTENZ'
+    'USERNAME' => 'RajanB'
+    'USERPROFILE' => 'C:\\Users\\RajanB'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\web\\Oracle\\VirtualBox\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522662397.6072
+    'REQUEST_TIME' => 1522662397
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2018-04-02 12:09:39 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "rbac/migrate/create". in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('rbac/migrate/cr...', Array)
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/migrate/cr...', Array)
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\korforum.com\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "rbac/migrate/create". in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/migrate/cr...', Array)
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\korforum.com\yii(23): yii\base\Application->run()
+#3 {main}
+2018-04-02 12:09:39 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\RajanB\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGRWSTKOR23W10'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\web\\Git'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'C:\\Users\\RajanB'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\RajanB'
+    'HOSTNAME' => 'CGRWSTKOR23W10'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\RajanB\\AppData\\Local'
+    'LOGONSERVER' => '\\\\CGRDOMKOR1W16'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\RajanB\\OneDrive'
+    'ORIGINAL_PATH' => 'C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\RajanB\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\local\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\web\\Git\\usr\\bin\\vendor_perl;C:\\web\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 23 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '170a'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/c/xampp/htdocs/korforum.com'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\web\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'KORCOMPTENZ.COM'
+    'USERDOMAIN' => 'KORCOMPTENZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'KORCOMPTENZ'
+    'USERNAME' => 'RajanB'
+    'USERPROFILE' => 'C:\\Users\\RajanB'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\web\\Oracle\\VirtualBox\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522663779.6341
+    'REQUEST_TIME' => 1522663779
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac/migrate/create'
+        2 => 'create_role_admin'
+    ]
+    'argc' => 3
+]
+2018-04-02 12:42:18 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "rbac/init". in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/init', Array)
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\korforum.com\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "rbac/init". in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\korforum.com\yii(23): yii\base\Application->run()
+#3 {main}
+2018-04-02 12:42:18 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\RajanB\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGRWSTKOR23W10'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\web\\Git'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'C:\\Users\\RajanB'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\RajanB'
+    'HOSTNAME' => 'CGRWSTKOR23W10'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\RajanB\\AppData\\Local'
+    'LOGONSERVER' => '\\\\CGRDOMKOR1W16'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\RajanB\\OneDrive'
+    'ORIGINAL_PATH' => 'C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\RajanB\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\local\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\web\\Git\\usr\\bin\\vendor_perl;C:\\web\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 23 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '170a'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/c/xampp/htdocs/korforum.com'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\web\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'KORCOMPTENZ.COM'
+    'USERDOMAIN' => 'KORCOMPTENZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'KORCOMPTENZ'
+    'USERNAME' => 'RajanB'
+    'USERPROFILE' => 'C:\\Users\\RajanB'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\web\\Oracle\\VirtualBox\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522665738.1799
+    'REQUEST_TIME' => 1522665738
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2018-04-02 12:43:52 [-][-][-][error][ReflectionException] ReflectionException: Class m180402_104251_init_rbac does not exist in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php:428
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(428): ReflectionClass->__construct('m180402_104251_...')
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('m180402_104251_...')
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('m180402_104251_...', Array, Array)
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('m180402_104251_...', Array, Array)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\controllers\MigrateController.php(201): yii\BaseYii::createObject(Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m180402_104251_...')
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m180402_104251_...')
+#7 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#13 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#14 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\korforum.com\yii(23): yii\base\Application->run()
+#16 {main}
+2018-04-02 12:43:50 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\RajanB\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGRWSTKOR23W10'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\web\\Git'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'C:\\Users\\RajanB'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\RajanB'
+    'HOSTNAME' => 'CGRWSTKOR23W10'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\RajanB\\AppData\\Local'
+    'LOGONSERVER' => '\\\\CGRDOMKOR1W16'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\RajanB\\OneDrive'
+    'ORIGINAL_PATH' => 'C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\RajanB\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\local\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\usr\\bin;C:\\web\\Git\\mingw64\\bin;C:\\web\\Git\\usr\\bin;C:\\Users\\RajanB\\bin;C:\\Program Files\\Python36\\Scripts;C:\\Program Files\\Python36;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm;C:\\Program Files\\MySQL\\MySQL Utilities 1.6;C:\\web\\Git\\cmd;C:\\web;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\web\\Git\\usr\\bin\\vendor_perl;C:\\web\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 23 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '170a'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/c/xampp/htdocs/korforum.com'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\web\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\RajanB\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'KORCOMPTENZ.COM'
+    'USERDOMAIN' => 'KORCOMPTENZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'KORCOMPTENZ'
+    'USERNAME' => 'RajanB'
+    'USERPROFILE' => 'C:\\Users\\RajanB'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\web\\Oracle\\VirtualBox\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522665830.7019
+    'REQUEST_TIME' => 1522665830
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

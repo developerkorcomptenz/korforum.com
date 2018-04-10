@@ -48,4 +48,58 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'yiisoft/yii2-jui' => 
+  array (
+    'name' => 'yiisoft/yii2-jui',
+    'version' => '2.0.7.0',
+    'alias' => 
+    array (
+      '@yii/jui' => $vendorDir . '/yiisoft/yii2-jui',
+    ),
+  ),
+  '2amigos/yii2-arrayquery-component' => 
+  array (
+    'name' => '2amigos/yii2-arrayquery-component',
+    'version' => '1.0.3.0',
+    'alias' => 
+    array (
+      '@dosamigos/arrayquery' => $vendorDir . '/2amigos/yii2-arrayquery-component/src',
+    ),
+  ),
+  'yii2mod/yii2-rbac' => 
+  array (
+    'name' => 'yii2mod/yii2-rbac',
+    'version' => '2.3.0.0',
+    'alias' => 
+    array (
+      '@yii2mod/rbac' => $vendorDir . '/yii2mod/yii2-rbac',
+    ),
+  ),
+  '2amigos/yii2-ckeditor-widget' => 
+  array (
+    'name' => '2amigos/yii2-ckeditor-widget',
+    'version' => '2.1.0.0',
+    'alias' => 
+    array (
+      '@dosamigos/ckeditor' => $vendorDir . '/2amigos/yii2-ckeditor-widget/src',
+    ),
+  ),
+  'kartik-v/yii2-krajee-base' => 
+  array (
+    'name' => 'kartik-v/yii2-krajee-base',
+    'version' => '1.8.9.0',
+    'alias' => 
+    array (
+      '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base',
+    ),
+  ),
+  'kartik-v/yii2-widget-fileinput' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-fileinput',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/file' => $vendorDir . '/kartik-v/yii2-widget-fileinput',
+    ),
+  ),
 );

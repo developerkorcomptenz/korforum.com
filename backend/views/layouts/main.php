@@ -30,18 +30,26 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandUrl' => Yii::$app->urlManager->createUrl(['../']),
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'Home', 'url' => ['/site/index']]
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
-        $menuItems[] = '<li>'
+        $menuItems = [
+			['label' => 'Home', 'url' => ['/site/index']],
+			['label' => 'Category', 'url' => ['/category/index']],
+			['label' => 'Questions', 'url' => ['/question/index']],
+			['label' => 'Answers', 'url' => ['/answer/index']],
+			['label' => 'Users', 'url' => ['/user/index']],
+			['label' => 'Wiki', 'url' => ['/wiki/index']],
+		];
+		$menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
                 'Logout (' . Yii::$app->user->identity->username . ')',

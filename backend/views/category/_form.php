@@ -3,16 +3,16 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
-use backend\models\Category;
+use common\models\Category;
 /* @var $this yii\web\View */
-/* @var $model backend\models\Category */
+/* @var $model common\models\Category */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
 <div class="category-form">
 	<?php 
 		$categories=ArrayHelper::map(Category::find()->all(), 'id', 'category_name');
-		array_splice( $categories, 0, 0,array('Parent Category'));
+		array_splice( $categories, 0, 0,array('Main Category'));
 		?>
     <?php $form = ActiveForm::begin(); ?>
 

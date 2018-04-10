@@ -7,6 +7,9 @@ return [
             'username' => 'root',
             'password' => 'root',
             'charset' => 'utf8',
+			'on afterOpen' => function($event) { 
+					$event->sender->createCommand("SET time_zone='+05:30';")->execute(); 
+				},
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -17,4 +20,6 @@ return [
             'useFileTransport' => true,
         ],
     ],
+	'id' => 'kor_forum',
+    'name'=>'KOR FORUM',
 ];

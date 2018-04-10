@@ -53,6 +53,37 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+			[['username', 'auth_key', 'email'], 'required'],
+            [['status', 'created_at', 'updated_at'], 'integer'],
+            [['username', 'password_hash', 'password_reset_token', 'email', 'first_name', 'last_name', 'designation', 'technology'], 'string', 'max' => 255],
+            [['auth_key'], 'string', 'max' => 32],
+            [['username'], 'unique'],
+            [['email'], 'unique'],
+            [['password_reset_token'], 'unique'],
+        ];
+    }
+	
+	public function getQuestions()
+    {
+        return $this->hasMany(Question::className(), ['user_id' => 'id']);
+    }
+	
+	public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'username' => 'Username',
+            'auth_key' => 'Password',
+            'password_hash' => 'Confirm Password',
+            'password_reset_token' => 'Password Reset Token',
+            'email' => 'Email',
+			'first_name' => 'First Name',
+			'last_name' => 'Last Name',
+			'designation' => 'Designation',
+			'technology' => 'Technology',
+            'status' => 'Status',
+            'created_at' => 'Created At',
+            'updated_at' => 'Updated At',
         ];
     }
 

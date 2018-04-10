@@ -118,3 +118,30 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+#question-header h3
+{
+	float:left;
+}
+.question-actions
+{
+	float:right;
+}
+.question-description
+{
+	margin-bottom:40px;
+	margin-top:20px;
+}
+.answer-description
+{
+	margin-bottom: 20px;
+}
+
+.wiki-box{margin:20px 0px;}
+.wiki-teaser{margin:10px 0px;}
+.wiki-image,.wiki-content{padding:25px;}
+.wiki-content{text-align: justify;}
+.wiki-image img{width:100%;}
+.file-preview-image{width:211px;
+    height: 180px;}
+.wiki-update .hidden-xs,.wiki-update .fileinput-remove-button,.wiki-update .kv-file-remove{display: none;}

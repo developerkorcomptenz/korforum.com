@@ -14,9 +14,29 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+		'rbac' => [
+            'class' => 'yii2mod\rbac\Module',
+        ],
+    ],
     'components' => [
-        'request' => [
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+            'defaultRoles' => ['guest', 'user'],
+        ],
+		'i18n' => [
+			'translations' => [
+				'*' => [
+					'class' => 'yii\i18n\PhpMessageSource',
+					'basePath' => '@app/messages', // if advanced application, set @frontend/messages
+					'sourceLanguage' => 'en',
+					'fileMap' => [
+						//'main' => 'main.php',
+					],
+				],
+			],
+		],
+		'request' => [
             'csrfParam' => '_csrf-backend',
 			'baseUrl' => $baseUrl,
         ],

@@ -28,7 +28,7 @@ class SiteController extends Controller
                     [
                         'actions' => ['logout', 'index'],
                         'allow' => true,
-                        'roles' => ['@'],
+                        'roles' => ['admin'],
                     ],
                 ],
             ],
@@ -76,7 +76,16 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+             if (\Yii::$app->user->can('admin'))
+			{
+				return $this->goBack();
+			}
+			else 
+			{   
+				Yii::$app->user->logout();
+				\Yii::$app->getSession()->setFlash('error', 'You are not authorized to login Admin\'s penal.<br /> Please use valid Username & Password.<br />Please contact Administrator for details.');
+				return $this->redirect(['/site/login']);
+			}
         } else {
             $model->password = '';
 
