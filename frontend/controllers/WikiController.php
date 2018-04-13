@@ -21,7 +21,25 @@ class WikiController extends Controller
     public function behaviors()
     {
         return [
-            'verbs' => [
+            'access' => [
+                        'class' => \yii\filters\AccessControl::className(),
+                        'only' => ['index','create','update','view'],
+                        'rules' => [
+                             [
+								'actions' => ['index','view'],
+								'allow' => true,
+								'roles' => ['?'],
+							],
+							// allow authenticated users
+                            [
+                                'actions'=>['index','create','update','view'],
+								'allow' => true,
+                                'roles' => ['@'],
+                            ],
+                            // everything else is denied
+                        ],
+            ],
+			'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],

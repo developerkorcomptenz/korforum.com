@@ -12,6 +12,3 @@ nbproject
 # windows thumbnail cache
 Thumbs.db
 
-backend/runtime/debug/
-frontend/runtime/debug/
-
