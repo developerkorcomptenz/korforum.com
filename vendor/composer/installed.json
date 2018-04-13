@@ -763,17 +763,17 @@
     },
     {
         "name": "egulias/email-validator",
-        "version": "2.1.3",
-        "version_normalized": "2.1.3.0",
+        "version": "2.1.4",
+        "version_normalized": "2.1.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/egulias/EmailValidator.git",
-            "reference": "1bec00a10039b823cc94eef4eddd47dcd3b2ca04"
+            "reference": "8790f594151ca6a2010c6218e09d96df67173ad3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/1bec00a10039b823cc94eef4eddd47dcd3b2ca04",
-            "reference": "1bec00a10039b823cc94eef4eddd47dcd3b2ca04",
+            "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/8790f594151ca6a2010c6218e09d96df67173ad3",
+            "reference": "8790f594151ca6a2010c6218e09d96df67173ad3",
             "shasum": ""
         },
         "require": {
@@ -782,13 +782,13 @@
         },
         "require-dev": {
             "dominicsayers/isemail": "dev-master",
-            "phpunit/phpunit": "^4.8.35",
+            "phpunit/phpunit": "^4.8.35||^5.7||^6.0",
             "satooshi/php-coveralls": "^1.0.1"
         },
         "suggest": {
             "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
         },
-        "time": "2017-11-15T23:40:40+00:00",
+        "time": "2018-04-10T10:11:19+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -990,20 +990,20 @@
     },
     {
         "name": "kartik-v/bootstrap-fileinput",
-        "version": "v4.4.7",
-        "version_normalized": "4.4.7.0",
+        "version": "v4.4.8",
+        "version_normalized": "4.4.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-            "reference": "aebea0804d955af913d3cd5922e6b01be66290c9"
+            "reference": "7a2191d2b7ae65f5ca4ddb090a69d65805eb7edf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/aebea0804d955af913d3cd5922e6b01be66290c9",
-            "reference": "aebea0804d955af913d3cd5922e6b01be66290c9",
+            "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/7a2191d2b7ae65f5ca4ddb090a69d65805eb7edf",
+            "reference": "7a2191d2b7ae65f5ca4ddb090a69d65805eb7edf",
             "shasum": ""
         },
-        "time": "2018-01-22T17:05:07+00:00",
+        "time": "2018-04-11T10:34:10+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1098,24 +1098,24 @@
     },
     {
         "name": "kartik-v/yii2-widget-fileinput",
-        "version": "v1.0.6",
-        "version_normalized": "1.0.6.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
-            "reference": "d2c8dcde1aa69ac0c4a0e3b3cfc0d79b3cc2a550"
+            "reference": "c5495641c8a86690713eb562e544bf5eaaf727cb"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/d2c8dcde1aa69ac0c4a0e3b3cfc0d79b3cc2a550",
-            "reference": "d2c8dcde1aa69ac0c4a0e3b3cfc0d79b3cc2a550",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/c5495641c8a86690713eb562e544bf5eaaf727cb",
+            "reference": "c5495641c8a86690713eb562e544bf5eaaf727cb",
             "shasum": ""
         },
         "require": {
             "kartik-v/bootstrap-fileinput": "~4.4",
             "kartik-v/yii2-krajee-base": "~1.7"
         },
-        "time": "2017-05-25T20:12:30+00:00",
+        "time": "2017-12-06T12:34:31+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -1830,17 +1830,17 @@
     },
     {
         "name": "phpunit/phpunit",
-        "version": "7.1.2",
-        "version_normalized": "7.1.2.0",
+        "version": "7.1.3",
+        "version_normalized": "7.1.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/phpunit.git",
-            "reference": "6a17c170fb92845896e1b3b00fcb462cd4b3c017"
+            "reference": "a7834993ddbf4b0ed2c3b2dc1f3b1d093ef910a9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6a17c170fb92845896e1b3b00fcb462cd4b3c017",
-            "reference": "6a17c170fb92845896e1b3b00fcb462cd4b3c017",
+            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a7834993ddbf4b0ed2c3b2dc1f3b1d093ef910a9",
+            "reference": "a7834993ddbf4b0ed2c3b2dc1f3b1d093ef910a9",
             "shasum": ""
         },
         "require": {
@@ -1858,7 +1858,7 @@
             "phpunit/php-file-iterator": "^1.4.3",
             "phpunit/php-text-template": "^1.2.1",
             "phpunit/php-timer": "^2.0",
-            "phpunit/phpunit-mock-objects": "^6.1",
+            "phpunit/phpunit-mock-objects": "^6.1.1",
             "sebastian/comparator": "^2.1",
             "sebastian/diff": "^3.0",
             "sebastian/environment": "^3.1",
@@ -1875,7 +1875,7 @@
             "ext-xdebug": "*",
             "phpunit/php-invoker": "^2.0"
         },
-        "time": "2018-04-10T11:40:22+00:00",
+        "time": "2018-04-13T02:28:50+00:00",
         "bin": [
             "phpunit"
         ],
