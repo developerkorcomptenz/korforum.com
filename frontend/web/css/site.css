@@ -136,7 +136,10 @@ a.desc:after {
 {
 	margin-bottom: 20px;
 }
-
+.badge.pull-right
+{
+	margin-top: 8px;
+}
 .wiki-box{margin:20px 0px;}
 .wiki-teaser{margin:10px 0px;}
 .wiki-image,.wiki-content{padding:25px;}

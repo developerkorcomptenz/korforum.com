@@ -1,53 +1,65 @@
 <?php
 
+use yii\helpers\Html;
+use common\models\Question;
+
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Korcomptenz Forum';
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
+<div class="col-md-9">
+	<h2 class="question-title">Questions</h2>
+	<?php
+	$questions=Question::find()->all();
+	if($questions)
+	{
+		foreach($questions as $question)
+		{
+			if($question->status=='1')
+			{
+				?>
+				<article class="question">
+					<h2><?= Html::a($question->question_title, ['question/view', 'id' => $question->id]) ?></h2>
+					<?= Html::a($question->category->category_name, ['category/view', 'id' => $question->category_id], ['class' => 'question-cat']) ?>	
+					<div class="question-author">
+						<a href="#" class="question-author-img"><span></span>
+						<img alt="" src="<?php echo Yii::$app->urlManager->createUrl("/frontend/web/images/avatar.png"); ?>"></a>
+					</div>
+					<div class="question-inner">
+						<div class="clearfix"></div>
+						<p class="question-desc"><?php echo strip_tags($question->description); ?></p>
+						<div class="meta-author">
+							<span class="glyphicon glyphicon-user"></span>
+							<a href="#"><?php echo ucfirst($question->user->username); ?></a>
+						</div>
+						<div class="question-category">
+							<span class="glyphicon glyphicon-folder-close"></span>
+							<?= Html::a($question->category->category_name, ['category/view', 'id' => $question->category_id]) ?>
+						</div>
+						<div class="question-date">
+							<span class="glyphicon glyphicon-calendar"></span>
+							<?php
+							if($question->created_date==$question->modified_date)
+							{
+								echo "asked ".Yii::$app->formatter->format(strtotime($question->created_date), 'relativeTime');  
+							}
+							else
+							{
+								echo "modified ".Yii::$app->formatter->format(strtotime($question->modified_date), 'relativeTime');  
+							}
+							?>
+						</div>
+						<div class="question-comment">
+							<span class="glyphicon glyphicon-comment"></span>
+							<?php echo count($question->answers). " Answer"; ?>
+						</div>
+						<div class="clearfix"></div>					
+				</article>
+				<?php
+			}
+		}
+	}
+	?>
 </div>
+<?= $this->render('..\site\sidebar') ?>

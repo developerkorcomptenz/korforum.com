@@ -65,7 +65,18 @@ class User extends ActiveRecord implements IdentityInterface
 	
 	public function getQuestions()
     {
-        return $this->hasMany(Question::className(), ['user_id' => 'id']);
+        return $this->hasMany(Question::className(), ['user_id' => 'id'])->andOnCondition(['status' => '1']);
+    }
+	
+	public function getWikis()
+    {
+        return $this->hasMany(Wiki::className(), ['user_id' => 'id']);
+    }
+	
+	
+	public function getAnswers()
+    {
+        return $this->hasMany(Answer::className(), ['user_id' => 'id'])->andOnCondition(['status' => '1']);
     }
 	
 	public function attributeLabels()

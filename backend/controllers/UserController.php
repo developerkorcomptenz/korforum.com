@@ -106,15 +106,7 @@ class UserController extends Controller
         $model = $this->findModel($id);
 		if(!empty(Yii::$app->request->post()))
 		{
-			$userValues = Yii::$app->request->post('User');
-			$authKey = $userValues['auth_key'];
-			if(!empty($userValues)){
-				if(!empty($authKey)){
-				$_POST ['User']['auth_key'] = Yii::$app->security->generateRandomString();
-				$_POST ['User']['password_hash'] = Yii::$app->security->generatePasswordHash($authKey);
-				}			
-			}
-			$_POST ['User']['password_reset_token'] = NULL;
+			$userValues = Yii::$app->request->post('User');	
 			if ($model->load($_POST) && $model->save()) {
 				return $this->redirect(['view', 'id' => $model->id]);
 			}

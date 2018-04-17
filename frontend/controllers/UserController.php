@@ -20,28 +20,31 @@ class UserController extends Controller
     public function behaviors()
     {
         return [
-            'verbs' => [
+            'access' => [
+                        'class' => \yii\filters\AccessControl::className(),
+                        'only' => ['view','dashboard','editprofile','changepassword'],
+                        'rules' => [
+                             [
+								'actions' => ['view'],
+								'allow' => true,
+								'roles' => ['?'],
+							],
+							// allow authenticated users
+                            [
+                                'actions'=>['dashboard','editprofile','changepassword'],
+								'allow' => true,
+                                'roles' => ['@'],
+                            ],
+                            // everything else is denied
+                        ],
+            ], 
+			'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
                 ],
             ],
         ];
-    }
-
-    /**
-     * Lists all User models.
-     * @return mixed
-     */
-    public function actionIndex()
-    {
-        $dataProvider = new ActiveDataProvider([
-            'query' => User::find(),
-        ]);
-
-        return $this->render('index', [
-            'dataProvider' => $dataProvider,
-        ]);
     }
 
     /**
@@ -55,59 +58,8 @@ class UserController extends Controller
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
-    }
-
-    /**
-     * Creates a new User model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
-     * @return mixed
-     */
-    public function actionCreate()
-    {
-        $model = new User();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
-
-        return $this->render('create', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Updates an existing User model.
-     * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    public function actionUpdate($id)
-    {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
-
-        return $this->render('update', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Deletes an existing User model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    public function actionDelete($id)
-    {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
-    }
+    }  
+    
 
     /**
      * Finds the User model based on its primary key value.
@@ -123,5 +75,45 @@ class UserController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+	
+	public function actionDashboard()
+    {
+        return $this->render('dashboard', [
+            'model' => $this->findModel(Yii::$app->user->identity->id),
+        ]);
+    }
+	public function actionChangepassword()
+    {
+            $id = \Yii::$app->user->id;
+ 
+			try {
+				$model = new \frontend\models\ChangePasswordForm($id);
+			} catch (InvalidParamException $e) {
+				throw new \yii\web\BadRequestHttpException($e->getMessage());
+			}
+		 
+			if ($model->load(\Yii::$app->request->post()) && $model->validate() && $model->changePassword()) {
+				\Yii::$app->session->setFlash('success', 'Password Changed!');
+			}
+		 
+			return $this->render('changePassword', [
+				'model' => $model,
+			]);
+    }
+	
+	public function actionEditprofile()
+    {
+        $model = $this->findModel(Yii::$app->user->identity->id);
+		if(!empty(Yii::$app->request->post()))
+		{			
+			if ($model->load($_POST) && $model->save()) {
+				return $this->redirect(['view', 'id' => $model->id]);
+			}
+		}
+
+        return $this->render('editprofile', [
+            'model' => $model,
+        ]);
     }
 }

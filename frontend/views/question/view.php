@@ -15,121 +15,122 @@ if(Yii::$app->user->identity)
 	$user_id=Yii::$app->user->identity->id;
 }
 ?>
-<div class="question-view">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 well">
-				<div id="question-header">
-					<h3><?= Html::encode($mvQuestion->question_title) ?></h3>		
-					<div class="question-actions">
-						<?php
-						if($mvQuestion->user_id == $user_id)
-						{
-							?>
-							<?= Html::a('Edit', ['update', 'id' => $mvQuestion->id], ['class' => 'btn btn-primary']) ?>
-							<?= Html::a('Delete', ['delete', 'id' => $mvQuestion->id], [
-								'class' => 'btn btn-danger',
-								'data' => [
-									'confirm' => 'Are you sure you want to delete this item?',
-									'method' => 'post',
-								],
-							]) ?>
-							<?php
-						}
-						?>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-				<div class="question-description">
-					<?php echo $mvQuestion->description; ?>				
-				</div>
-				<div class="clearfix"></div>
-				<hr>
-				<div class="col-sm-6">
-					<?= Html::a($mvQuestion->category->category_name, ['category/view', 'id' => $mvQuestion->category_id], ['class' => 'btn btn-info']) ?>
-				</div>
-				<div class="col-sm-6">
-					<div class="user-info text-right">
-							<?php
-							if($mvQuestion->created_date==$mvQuestion->modified_date)
-							{
-								echo "asked ".Yii::$app->formatter->format(strtotime($mvQuestion->created_date), 'relativeTime');  
-							}
-							else
-							{
-								echo "modified ".Yii::$app->formatter->format(strtotime($mvQuestion->modified_date), 'relativeTime');  
-							}
-							?>
-							<br>
-							<?php echo "".$mvQuestion->user->username;?>
-					</div>
-				</div>
-			</div>		
+<div class="col-md-9">
+	<article class="question single-question question-type-normal">
+		<h2>
+			<?= Html::encode($mvQuestion->question_title) ?>
+		</h2>
+		<div class="question-actions">
 			<?php
-			if($mvQuestion->answers)
+			if($mvQuestion->user_id == $user_id)
 			{
-				echo "<h3>Answers</h3>";
-				foreach($mvQuestion->answers as $answer)
-				{
-					?>
-					<div class="col-sm-12 well">
-						<div class="answer-description">
-							<?php echo $answer->answer; ?>				
-						</div>
-						<div class="clearfix"></div>
-						<hr>
-						<div class="col-sm-6">
-							<div class="answer-actions">
-								<?php
-								if($answer->user_id == $user_id)
-								{
-									?>
-									<?= Html::a('Edit', ['answer/update', 'id' => $answer->id], ['class' => 'btn btn-primary']) ?>
-									<?= Html::a('Delete', ['answer/delete', 'id' => $answer->id], [
-										'class' => 'btn btn-danger',
-										'data' => [
-											'confirm' => 'Are you sure you want to delete this item?',
-											'method' => 'post',
-										],
-									]) ?>
-									<?php
-								}
-								?>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="user-info text-right">
-									<?php
-									if($answer->created_date==$answer->modified_date)
-									{
-										echo "asked ".Yii::$app->formatter->format(strtotime($answer->created_date), 'relativeTime');  
-									}
-									else
-									{
-										echo "modified ".Yii::$app->formatter->format(strtotime($answer->modified_date), 'relativeTime');  
-									}
-									?>
-									<br>
-									<?php echo "".$answer->user->username;?>
-							</div>
-						</div>
-					</div>
-					<?php
-				}
+				?>
+				<?= Html::a('Edit', ['update', 'id' => $mvQuestion->id], ['class' => 'action-edit']) ?>
+				<?= Html::a('Delete', ['delete', 'id' => $mvQuestion->id], [
+					'class' => 'action-delete',
+					'data' => [
+						'confirm' => 'Are you sure you want to delete this item?',
+						'method' => 'post',
+					],
+				]) ?>
+				<?php
 			}
 			?>
-			<div class="col-sm-12">
+		</div>
+		<div class="question-inner">
+			<div class="clearfix"></div>
+			<div class="question-desc"><?php echo strip_tags($mvQuestion->description); ?></div>						
+			<div class="question-category">
+				<span class="glyphicon glyphicon-folder-close"></span>
+				<?= Html::a($mvQuestion->category->category_name, ['category/view', 'id' => $mvQuestion->category_id]) ?>
+			</div>
+			<div class="question-date">
+				<span class="glyphicon glyphicon-calendar"></span>
 				<?php
-				if(!Yii::$app->user->isGuest)
+				if($mvQuestion->created_date==$mvQuestion->modified_date)
 				{
-					?>
-					<?= $this->render('..\answer\_form', [
-						'mvAnswer' => $mvAnswer, 'vQuestionId' => $mvQuestion->id,
-					]) ?>
-					<?php
+					echo "asked ".Yii::$app->formatter->format(strtotime($mvQuestion->created_date), 'relativeTime');  
+				}
+				else
+				{
+					echo "modified ".Yii::$app->formatter->format(strtotime($mvQuestion->modified_date), 'relativeTime');  
 				}
 				?>
 			</div>
+			<div class="question-comment">
+				<span class="glyphicon glyphicon-comment"></span>
+				<?php echo count($mvQuestion->answers). " Answer"; ?>
+			</div>	
+			<div class="about-author">
+				<div class="author-name">			
+					<?= Html::a(ucfirst($mvQuestion->user->username), ['user/view', 'id' => $mvQuestion->user->id]) ?>
+				</div>
+				<div class="author-image">
+					<a href="#" class="question-author-img"><span></span>
+					<img alt="" src="<?php echo Yii::$app->urlManager->createUrl("/frontend/web/images/avatar.png"); ?>"></a>
+				</div>				
+			</div>
+			<div class="clearfix"></div>
 		</div>
+	</article>
+	<div id="answerlist">
+		<?php
+		if($mvQuestion->answers)
+		{
+			echo "<h3>Answers (".count($mvQuestion->answers).") </h3><ol class='answerlist clearfix'>";
+			foreach($mvQuestion->answers as $answer)
+			{
+				?>				
+				<li class="answer">
+					<div class="answer-body"> 
+						<div class="avatar"><img alt="" src="<?php echo Yii::$app->urlManager->createUrl("/frontend/web/images/avatar.png"); ?>"></div>
+						<div class="answer-text">
+							<div class="author clearfix">
+								<div class="answer-author"><?= Html::a(ucfirst($answer->user->username), ['user/view', 'id' => $answer->user->id]) ?></div>								
+								<div class="answer-meta">
+									<div class="date"><i class="icon-time"></i><?php echo date("F m,Y H:i a",strtotime($answer->modified_date)); ?></div> 
+								</div> 							
+								<div class="answer-actions">
+									<?php
+									if($answer->user_id == $user_id)
+									{
+										?>
+										<?= Html::a('Edit', ['answer/update', 'id' => $answer->id], ['class' => 'action-edit']) ?>
+										<?= Html::a('Delete', ['answer/delete', 'id' => $answer->id], [
+											'class' => 'action-delete',
+											'data' => [
+												'confirm' => 'Are you sure you want to delete this item?',
+												'method' => 'post',
+											],
+										]) ?>
+										<?php
+									}
+									?>
+								</div>
+							</div>
+							<div class="text"><?php echo $answer->answer; ?></p>
+							</div>
+						</div>
+					</div>
+				</li>	
+				<?php
+			}
+			echo "</ol>";
+		}
+		?>
 	</div>
+	<?php
+	if(!Yii::$app->user->isGuest)
+	{
+		?>
+		<div class="answer-respond clearfix">
+			<div class="page-title"><h2>Leave a reply</h2></div>		
+			<?= $this->render('..\answer\_form', [
+				'mvAnswer' => $mvAnswer, 'vQuestionId' => $mvQuestion->id,
+			]) ?>
+		</div>		
+		<?php
+	}
+	?>	
 </div>
+<?= $this->render('..\site\sidebar') ?>
