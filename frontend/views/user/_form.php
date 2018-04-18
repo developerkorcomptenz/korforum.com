@@ -2,6 +2,9 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use common\models\Designation;
+use common\models\Technology;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\User */
@@ -13,7 +16,8 @@ if(empty($model->status)){
 ?>
 
 <div class="user-form">
-	
+	<?php $designations=ArrayHelper::map(Designation::find()->all(), 'designation_name', 'designation_name'); ?>
+	<?php $technologies=ArrayHelper::map(Technology::find()->all(), 'technology_name', 'technology_name'); ?>
 
     <?php $form = ActiveForm::begin(); ?>
 	
@@ -25,9 +29,9 @@ if(empty($model->status)){
 	
 	<?= $form->field($model, 'last_name')->textInput() ?>
 	
-	<?= $form->field($model, 'designation')->textInput() ?>
+	<?= $form->field($model, 'designation')->dropDownList($designations) ?>
 	
-	<?= $form->field($model, 'technology')->textInput() ?>
+	<?= $form->field($model, 'technology')->dropDownList($technologies) ?>
 	
     <?= $form->field($model, 'status')->radioList(['10' => 'Active', '15' => 'InActive']
     ); ?>

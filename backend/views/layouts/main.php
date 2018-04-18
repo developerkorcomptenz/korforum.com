@@ -30,7 +30,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->urlManager->createUrl(['../']),
+        'brandUrl' => Yii::$app->urlManager->createUrl(['/']),
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
@@ -47,7 +47,10 @@ AppAsset::register($this);
 			['label' => 'Questions', 'url' => ['/question/index']],
 			['label' => 'Answers', 'url' => ['/answer/index']],
 			['label' => 'Users', 'url' => ['/user/index']],
+			['label' => 'Designations', 'url' => ['/designation/index']],
+			['label' => 'Technologies', 'url' => ['/technology/index']],
 			['label' => 'Wiki', 'url' => ['/wiki/index']],
+			['label' => 'Change Password', 'url' => ['/user/changepassword']],
 		];
 		$menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')

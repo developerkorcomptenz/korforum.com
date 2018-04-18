@@ -88,7 +88,7 @@ class UserController extends Controller
             $id = \Yii::$app->user->id;
  
 			try {
-				$model = new \frontend\models\ChangePasswordForm($id);
+				$model = new \common\models\ChangePasswordForm($id);
 			} catch (InvalidParamException $e) {
 				throw new \yii\web\BadRequestHttpException($e->getMessage());
 			}

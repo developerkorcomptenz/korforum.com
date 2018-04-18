@@ -31472,3 +31472,1615 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1523973475.986
     'REQUEST_TIME' => 1523973475
 ]
+2018-04-18 11:40:25 [::1][1][3r01424inko72navdgn7dhsbsk][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/changepassword in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/changepass...', Array)
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-18 11:40:25 [::1][1][3r01424inko72navdgn7dhsbsk][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '3r01424inko72navdgn7dhsbsk'
+    '_csrf-backend' => '55d34504bc24f14b8f320f19affd5f2302ea6a7dbbcfb7f95b09ab759a172485a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Y6DzT8zh35l8YFwQeHRTuaK5aY0mm4g7\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=3r01424inko72navdgn7dhsbsk; _csrf-backend=55d34504bc24f14b8f320f19affd5f2302ea6a7dbbcfb7f95b09ab759a172485a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Y6DzT8zh35l8YFwQeHRTuaK5aY0mm4g7%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52550'
+    'REDIRECT_URL' => '/korforum.com/backend/web/site/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/site/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524031825.351
+    'REQUEST_TIME' => 1524031825
+]
+2018-04-18 11:40:49 [::1][1][3r01424inko72navdgn7dhsbsk][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: user/changepassword in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-18 11:40:49 [::1][1][3r01424inko72navdgn7dhsbsk][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '3r01424inko72navdgn7dhsbsk'
+    '_csrf-backend' => '55d34504bc24f14b8f320f19affd5f2302ea6a7dbbcfb7f95b09ab759a172485a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Y6DzT8zh35l8YFwQeHRTuaK5aY0mm4g7\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=3r01424inko72navdgn7dhsbsk; _csrf-backend=55d34504bc24f14b8f320f19affd5f2302ea6a7dbbcfb7f95b09ab759a172485a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Y6DzT8zh35l8YFwQeHRTuaK5aY0mm4g7%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52556'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524031849.16
+    'REQUEST_TIME' => 1524031849
+]
+2018-04-18 11:44:18 [::1][1][3r01424inko72navdgn7dhsbsk][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\ChangePasswordForm' in file: C:\xampp\htdocs\korforum.com/backend/models/ChangePasswordForm.php. Namespace missing? in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(155): spl_autoload_call('backend\\models\\...')
+#2 [internal function]: backend\controllers\UserController->actionChangepassword()
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2018-04-18 11:44:17 [::1][1][3r01424inko72navdgn7dhsbsk][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '3r01424inko72navdgn7dhsbsk'
+    '_csrf-backend' => '55d34504bc24f14b8f320f19affd5f2302ea6a7dbbcfb7f95b09ab759a172485a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Y6DzT8zh35l8YFwQeHRTuaK5aY0mm4g7\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=3r01424inko72navdgn7dhsbsk; _csrf-backend=55d34504bc24f14b8f320f19affd5f2302ea6a7dbbcfb7f95b09ab759a172485a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Y6DzT8zh35l8YFwQeHRTuaK5aY0mm4g7%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52598'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524032057.939
+    'REQUEST_TIME' => 1524032057
+]
+2018-04-18 11:45:01 [::1][1][3r01424inko72navdgn7dhsbsk][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\korforum.com\backend\views\user\..\site\sidebar.php in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#1 C:\xampp\htdocs\korforum.com\backend\views\user\changePassword.php(27): yii\base\View->render('..\\site\\sidebar')
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\UserController))
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('changePassword', Array, Object(backend\controllers\UserController))
+#6 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(165): yii\base\Controller->render('changePassword', Array)
+#7 [internal function]: backend\controllers\UserController->actionChangepassword()
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2018-04-18 11:45:01 [::1][1][3r01424inko72navdgn7dhsbsk][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '3r01424inko72navdgn7dhsbsk'
+    '_csrf-backend' => '55d34504bc24f14b8f320f19affd5f2302ea6a7dbbcfb7f95b09ab759a172485a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Y6DzT8zh35l8YFwQeHRTuaK5aY0mm4g7\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=3r01424inko72navdgn7dhsbsk; _csrf-backend=55d34504bc24f14b8f320f19affd5f2302ea6a7dbbcfb7f95b09ab759a172485a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Y6DzT8zh35l8YFwQeHRTuaK5aY0mm4g7%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52617'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524032101.104
+    'REQUEST_TIME' => 1524032101
+]
+2018-04-18 12:00:40 [::1][1][31merl4col5ivfu9unfl3q1juo][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\ChangePasswordForm::old_password in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseHtml.php(2193): yii\base\Component->__get('old_password')
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseHtml.php(1323): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\ChangePasswordForm), 'old_password')
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseHtml.php(1438): yii\helpers\BaseHtml::activeInput('password', Object(common\models\ChangePasswordForm), 'old_password', Array)
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\widgets\ActiveField.php(455): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\ChangePasswordForm), 'old_password', Array)
+#4 C:\xampp\htdocs\korforum.com\backend\views\user\changePassword.php(17): yii\widgets\ActiveField->passwordInput()
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\UserController))
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('changePassword', Array, Object(backend\controllers\UserController))
+#9 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(165): yii\base\Controller->render('changePassword', Array)
+#10 [internal function]: backend\controllers\UserController->actionChangepassword()
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#14 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#15 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-18 12:00:40 [::1][1][31merl4col5ivfu9unfl3q1juo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '31merl4col5ivfu9unfl3q1juo'
+    '_csrf-backend' => '4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"dICuFMTEKrANcE8UJ24Y9giYvBeDVc11\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/site/index'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=31merl4col5ivfu9unfl3q1juo; _csrf-backend=4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22dICuFMTEKrANcE8UJ24Y9giYvBeDVc11%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52711'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524033040.322
+    'REQUEST_TIME' => 1524033040
+]
+2018-04-18 12:01:25 [::1][1][31merl4col5ivfu9unfl3q1juo][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\ChangePasswordForm::old_password in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseHtml.php(2193): yii\base\Component->__get('old_password')
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseHtml.php(1323): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\ChangePasswordForm), 'old_password')
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseHtml.php(1438): yii\helpers\BaseHtml::activeInput('password', Object(common\models\ChangePasswordForm), 'old_password', Array)
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\widgets\ActiveField.php(455): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\ChangePasswordForm), 'old_password', Array)
+#4 C:\xampp\htdocs\korforum.com\backend\views\user\changePassword.php(17): yii\widgets\ActiveField->passwordInput()
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\UserController))
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('changePassword', Array, Object(backend\controllers\UserController))
+#9 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(165): yii\base\Controller->render('changePassword', Array)
+#10 [internal function]: backend\controllers\UserController->actionChangepassword()
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#14 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#15 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-18 12:01:25 [::1][1][31merl4col5ivfu9unfl3q1juo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '31merl4col5ivfu9unfl3q1juo'
+    '_csrf-backend' => '4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"dICuFMTEKrANcE8UJ24Y9giYvBeDVc11\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/site/index'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=31merl4col5ivfu9unfl3q1juo; _csrf-backend=4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22dICuFMTEKrANcE8UJ24Y9giYvBeDVc11%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52722'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524033085.524
+    'REQUEST_TIME' => 1524033085
+]
+2018-04-18 12:01:29 [::1][1][31merl4col5ivfu9unfl3q1juo][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\ChangePasswordForm::old_password in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseHtml.php(2193): yii\base\Component->__get('old_password')
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseHtml.php(1323): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\ChangePasswordForm), 'old_password')
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseHtml.php(1438): yii\helpers\BaseHtml::activeInput('password', Object(common\models\ChangePasswordForm), 'old_password', Array)
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\widgets\ActiveField.php(455): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\ChangePasswordForm), 'old_password', Array)
+#4 C:\xampp\htdocs\korforum.com\backend\views\user\changePassword.php(17): yii\widgets\ActiveField->passwordInput()
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\UserController))
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('changePassword', Array, Object(backend\controllers\UserController))
+#9 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(165): yii\base\Controller->render('changePassword', Array)
+#10 [internal function]: backend\controllers\UserController->actionChangepassword()
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#14 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#15 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-18 12:01:29 [::1][1][31merl4col5ivfu9unfl3q1juo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '31merl4col5ivfu9unfl3q1juo'
+    '_csrf-backend' => '4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"dICuFMTEKrANcE8UJ24Y9giYvBeDVc11\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=31merl4col5ivfu9unfl3q1juo; _csrf-backend=4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22dICuFMTEKrANcE8UJ24Y9giYvBeDVc11%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52724'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524033089.454
+    'REQUEST_TIME' => 1524033089
+]
+2018-04-18 12:06:18 [::1][1][31merl4col5ivfu9unfl3q1juo][error][Error] Error: Class 'common\models\Login' not found in C:\xampp\htdocs\korforum.com\common\models\ChangePasswordForm.php:70
+Stack trace:
+#0 [internal function]: common\models\ChangePasswordForm->findPasswords('old_password', NULL, Object(yii\validators\InlineValidator))
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'old_password', NULL, Object(yii\validators\InlineValidator))
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\ChangePasswordForm), 'old_password')
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\ChangePasswordForm), Array)
+#4 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(160): yii\base\Model->validate()
+#5 [internal function]: backend\controllers\UserController->actionChangepassword()
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2018-04-18 12:06:18 [::1][1][31merl4col5ivfu9unfl3q1juo][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => '67eF5sKkQM6kAC3OUl3dl0m5RvWocZ4K8qnRmzeFSq-P_saThOkUi-9ybIAxGOXCA4tyrJEW91OE67TfYeZ7ng=='
+    'ChangePasswordForm' => [
+        'old_password' => 'admin@1234asd'
+        'password' => 'admin@123'
+        'confirm_password' => 'admin@123'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '31merl4col5ivfu9unfl3q1juo'
+    '_csrf-backend' => '4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"dICuFMTEKrANcE8UJ24Y9giYvBeDVc11\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/user/changepassword'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '257'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=31merl4col5ivfu9unfl3q1juo; _csrf-backend=4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22dICuFMTEKrANcE8UJ24Y9giYvBeDVc11%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52843'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524033378.273
+    'REQUEST_TIME' => 1524033378
+]
+2018-04-18 12:06:57 [::1][1][31merl4col5ivfu9unfl3q1juo][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Getting write-only property: common\models\User::password in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Component.php:151
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('password')
+#1 C:\xampp\htdocs\korforum.com\common\models\ChangePasswordForm.php(73): yii\db\BaseActiveRecord->__get('password')
+#2 [internal function]: common\models\ChangePasswordForm->findPasswords('old_password', NULL, Object(yii\validators\InlineValidator))
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'old_password', NULL, Object(yii\validators\InlineValidator))
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\ChangePasswordForm), 'old_password')
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\ChangePasswordForm), Array)
+#6 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(160): yii\base\Model->validate()
+#7 [internal function]: backend\controllers\UserController->actionChangepassword()
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2018-04-18 12:06:56 [::1][1][31merl4col5ivfu9unfl3q1juo][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => '67eF5sKkQM6kAC3OUl3dl0m5RvWocZ4K8qnRmzeFSq-P_saThOkUi-9ybIAxGOXCA4tyrJEW91OE67TfYeZ7ng=='
+    'ChangePasswordForm' => [
+        'old_password' => 'admin@1234asd'
+        'password' => 'admin@123'
+        'confirm_password' => 'admin@123'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '31merl4col5ivfu9unfl3q1juo'
+    '_csrf-backend' => '4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"dICuFMTEKrANcE8UJ24Y9giYvBeDVc11\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/user/changepassword'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '257'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=31merl4col5ivfu9unfl3q1juo; _csrf-backend=4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22dICuFMTEKrANcE8UJ24Y9giYvBeDVc11%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52866'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524033416.88
+    'REQUEST_TIME' => 1524033416
+]
+2018-04-18 12:07:43 [::1][1][31merl4col5ivfu9unfl3q1juo][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Getting write-only property: common\models\User::password in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Component.php:151
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('password')
+#1 C:\xampp\htdocs\korforum.com\common\models\ChangePasswordForm.php(71): yii\db\BaseActiveRecord->__get('password')
+#2 [internal function]: common\models\ChangePasswordForm->findPasswords('old_password', NULL, Object(yii\validators\InlineValidator))
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'old_password', NULL, Object(yii\validators\InlineValidator))
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\ChangePasswordForm), 'old_password')
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\ChangePasswordForm), Array)
+#6 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(160): yii\base\Model->validate()
+#7 [internal function]: backend\controllers\UserController->actionChangepassword()
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2018-04-18 12:07:43 [::1][1][31merl4col5ivfu9unfl3q1juo][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => '67eF5sKkQM6kAC3OUl3dl0m5RvWocZ4K8qnRmzeFSq-P_saThOkUi-9ybIAxGOXCA4tyrJEW91OE67TfYeZ7ng=='
+    'ChangePasswordForm' => [
+        'old_password' => 'admin@1234asd'
+        'password' => 'admin@123'
+        'confirm_password' => 'admin@123'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '31merl4col5ivfu9unfl3q1juo'
+    '_csrf-backend' => '4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"dICuFMTEKrANcE8UJ24Y9giYvBeDVc11\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/user/changepassword'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '257'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=31merl4col5ivfu9unfl3q1juo; _csrf-backend=4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22dICuFMTEKrANcE8UJ24Y9giYvBeDVc11%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52870'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524033463.544
+    'REQUEST_TIME' => 1524033463
+]
+2018-04-18 12:08:32 [::1][1][31merl4col5ivfu9unfl3q1juo][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Getting write-only property: common\models\User::password in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Component.php:151
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('password')
+#1 C:\xampp\htdocs\korforum.com\common\models\ChangePasswordForm.php(71): yii\db\BaseActiveRecord->__get('password')
+#2 [internal function]: common\models\ChangePasswordForm->findPasswords('old_password', NULL, Object(yii\validators\InlineValidator))
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'old_password', NULL, Object(yii\validators\InlineValidator))
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\ChangePasswordForm), 'old_password')
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\ChangePasswordForm), Array)
+#6 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(160): yii\base\Model->validate()
+#7 [internal function]: backend\controllers\UserController->actionChangepassword()
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2018-04-18 12:08:32 [::1][1][31merl4col5ivfu9unfl3q1juo][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => '67eF5sKkQM6kAC3OUl3dl0m5RvWocZ4K8qnRmzeFSq-P_saThOkUi-9ybIAxGOXCA4tyrJEW91OE67TfYeZ7ng=='
+    'ChangePasswordForm' => [
+        'old_password' => 'admin@1234asd'
+        'password' => 'admin@123'
+        'confirm_password' => 'admin@123'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '31merl4col5ivfu9unfl3q1juo'
+    '_csrf-backend' => '4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"dICuFMTEKrANcE8UJ24Y9giYvBeDVc11\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/user/changepassword'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '257'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=31merl4col5ivfu9unfl3q1juo; _csrf-backend=4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22dICuFMTEKrANcE8UJ24Y9giYvBeDVc11%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52878'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524033511.996
+    'REQUEST_TIME' => 1524033511
+]
+2018-04-18 12:10:33 [::1][1][31merl4col5ivfu9unfl3q1juo][error][ParseError] ParseError: syntax error, unexpected '$password' (T_VARIABLE) in C:\xampp\htdocs\korforum.com\common\models\ChangePasswordForm.php:73
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('common\\models\\C...')
+#1 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(155): spl_autoload_call('common\\models\\C...')
+#2 [internal function]: backend\controllers\UserController->actionChangepassword()
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2018-04-18 12:10:33 [::1][1][31merl4col5ivfu9unfl3q1juo][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'TE8fdb4LGZ9FCf6l5s4PtqXiI_KM-i3zfANM2VxTCcQoBlwA-EZN2g57v-uFizfj79AXq7WdRKoKQSmdCjA49Q=='
+    'ChangePasswordForm' => [
+        'old_password' => 'admin@123'
+        'password' => 'admin@1234'
+        'confirm_password' => 'admin@1234'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '31merl4col5ivfu9unfl3q1juo'
+    '_csrf-backend' => '4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"dICuFMTEKrANcE8UJ24Y9giYvBeDVc11\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/user/changepassword'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '255'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=31merl4col5ivfu9unfl3q1juo; _csrf-backend=4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22dICuFMTEKrANcE8UJ24Y9giYvBeDVc11%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '52927'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524033633.729
+    'REQUEST_TIME' => 1524033633
+]
+2018-04-18 12:15:04 [::1][1][31merl4col5ivfu9unfl3q1juo][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\ChangePasswordForm::oldPassword in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\common\models\ChangePasswordForm.php(73): yii\base\Component->__get('oldPassword')
+#1 [internal function]: common\models\ChangePasswordForm->validatePassword('old_password', NULL, Object(yii\validators\InlineValidator))
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'old_password', NULL, Object(yii\validators\InlineValidator))
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\ChangePasswordForm), 'old_password')
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\ChangePasswordForm), Array)
+#5 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(160): yii\base\Model->validate()
+#6 [internal function]: backend\controllers\UserController->actionChangepassword()
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('changepassword', Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/changepass...', Array)
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-18 12:15:04 [::1][1][31merl4col5ivfu9unfl3q1juo][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'TE8fdb4LGZ9FCf6l5s4PtqXiI_KM-i3zfANM2VxTCcQoBlwA-EZN2g57v-uFizfj79AXq7WdRKoKQSmdCjA49Q=='
+    'ChangePasswordForm' => [
+        'old_password' => 'admin@123'
+        'password' => 'admin@1234'
+        'confirm_password' => 'admin@1234'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => 'tk807q8ls0va45cuqjdnnmg8ok'
+    '_csrf-frontend' => 'e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV\";}'
+    'advanced-backend' => '31merl4col5ivfu9unfl3q1juo'
+    '_csrf-backend' => '4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"dICuFMTEKrANcE8UJ24Y9giYvBeDVc11\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/user/changepassword'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '255'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=tk807q8ls0va45cuqjdnnmg8ok; _csrf-frontend=e2992a00acc7a059b4e64dec3cf190679aaf4506d2f216fbe819c23bfdb4f513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_BWM0ufIOQpJxeSDwGXq4nBjz37isNUV%22%3B%7D; advanced-backend=31merl4col5ivfu9unfl3q1juo; _csrf-backend=4ed75c9f313509e8e540b13cb59cda5a0f7ca57074cb7b13a55385e9a8487fb5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22dICuFMTEKrANcE8UJ24Y9giYvBeDVc11%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '53023'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/changepassword'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/changepassword'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524033904.633
+    'REQUEST_TIME' => 1524033904
+]
+2018-04-18 13:01:02 [::1][1][nkuur1j2u8lu4qfh71okjckjaf][error][ArgumentCountError] ArgumentCountError: Too few arguments to function yii\helpers\BaseArrayHelper::map(), 2 passed in C:\xampp\htdocs\korforum.com\backend\views\user\_create-form.php on line 18 and at least 3 expected in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php:574
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\backend\views\user\_create-form.php(18): yii\helpers\BaseArrayHelper::map(Array, 'designation_nam...')
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\korforum.com\backend\views\user\create.php(18): yii\base\View->render('_create-form', Array)
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\UserController))
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#9 C:\xampp\htdocs\korforum.com\backend\controllers\UserController.php(93): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\UserController->actionCreate()
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/create', Array)
+#15 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-18 13:01:02 [::1][1][nkuur1j2u8lu4qfh71okjckjaf][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => '5ho1b4q2v1qidbsul28ni3h2e1'
+    '_csrf-frontend' => 'f710e41be73a622ad505b7f3cb046495ff7193a8493f8fb06578b66a99ee6815a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yO_Iix-ZsYMm_Cz6G0L_8IO746_qsg3L\";}'
+    'advanced-backend' => 'nkuur1j2u8lu4qfh71okjckjaf'
+    '_csrf-backend' => 'f30d215229890fe0533394bac42515c3aad9d4bb2172343490c3330e1d3827bea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"5VHq45DlCCvUiwa1KHeF2gQ2bcro3p1_\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/user/index'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=5ho1b4q2v1qidbsul28ni3h2e1; _csrf-frontend=f710e41be73a622ad505b7f3cb046495ff7193a8493f8fb06578b66a99ee6815a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yO_Iix-ZsYMm_Cz6G0L_8IO746_qsg3L%22%3B%7D; advanced-backend=nkuur1j2u8lu4qfh71okjckjaf; _csrf-backend=f30d215229890fe0533394bac42515c3aad9d4bb2172343490c3330e1d3827bea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%225VHq45DlCCvUiwa1KHeF2gQ2bcro3p1_%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '49211'
+    'REDIRECT_URL' => '/korforum.com/backend/web/user/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/user/create'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524036662.173
+    'REQUEST_TIME' => 1524036662
+]
+2018-04-18 13:08:10 [::1][1][nkuur1j2u8lu4qfh71okjckjaf][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "Technology". in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('Technology', Array)
+#1 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-18 13:08:10 [::1][1][nkuur1j2u8lu4qfh71okjckjaf][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => '5ho1b4q2v1qidbsul28ni3h2e1'
+    '_csrf-frontend' => 'f710e41be73a622ad505b7f3cb046495ff7193a8493f8fb06578b66a99ee6815a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yO_Iix-ZsYMm_Cz6G0L_8IO746_qsg3L\";}'
+    'advanced-backend' => 'nkuur1j2u8lu4qfh71okjckjaf'
+    '_csrf-backend' => 'f30d215229890fe0533394bac42515c3aad9d4bb2172343490c3330e1d3827bea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"5VHq45DlCCvUiwa1KHeF2gQ2bcro3p1_\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=5ho1b4q2v1qidbsul28ni3h2e1; _csrf-frontend=f710e41be73a622ad505b7f3cb046495ff7193a8493f8fb06578b66a99ee6815a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yO_Iix-ZsYMm_Cz6G0L_8IO746_qsg3L%22%3B%7D; advanced-backend=nkuur1j2u8lu4qfh71okjckjaf; _csrf-backend=f30d215229890fe0533394bac42515c3aad9d4bb2172343490c3330e1d3827bea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%225VHq45DlCCvUiwa1KHeF2gQ2bcro3p1_%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '49423'
+    'REDIRECT_URL' => '/korforum.com/backend/web/Technology'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/korforum.com/admin/Technology'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524037090.714
+    'REQUEST_TIME' => 1524037090
+]
+2018-04-18 13:10:33 [::1][1][nkuur1j2u8lu4qfh71okjckjaf][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Designation::technology_name in C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('technology_name')
+#1 C:\xampp\htdocs\korforum.com\backend\views\designation\update.php(8): yii\db\BaseActiveRecord->__get('technology_name')
+#2 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\DesignationController))
+#5 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('update', Array, Object(backend\controllers\DesignationController))
+#6 C:\xampp\htdocs\korforum.com\backend\controllers\DesignationController.php(106): yii\base\Controller->render('update', Array)
+#7 [internal function]: backend\controllers\DesignationController->actionUpdate('1')
+#8 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update', Array)
+#11 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('designation/upd...', Array)
+#12 C:\xampp\htdocs\korforum.com\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\korforum.com\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2018-04-18 13:10:33 [::1][1][nkuur1j2u8lu4qfh71okjckjaf][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m\",2592000]\";}'
+    'advanced-frontend' => '5ho1b4q2v1qidbsul28ni3h2e1'
+    '_csrf-frontend' => 'f710e41be73a622ad505b7f3cb046495ff7193a8493f8fb06578b66a99ee6815a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yO_Iix-ZsYMm_Cz6G0L_8IO746_qsg3L\";}'
+    'advanced-backend' => 'nkuur1j2u8lu4qfh71okjckjaf'
+    '_csrf-backend' => 'f30d215229890fe0533394bac42515c3aad9d4bb2172343490c3330e1d3827bea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"5VHq45DlCCvUiwa1KHeF2gQ2bcro3p1_\";}'
+    '_identity-backend' => 'c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"3rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/korforum.com/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/korforum.com/admin/designation/index'
+    'HTTP_COOKIE' => '_identity=866db1f5ed90c439c7f3cfca7d88ea1799367c0db7009c10d2947c74ae8ead9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uuPClXPSWuDwBVVP3ii6jqxbe1RClg5m%22%2C2592000%5D%22%3B%7D; advanced-frontend=5ho1b4q2v1qidbsul28ni3h2e1; _csrf-frontend=f710e41be73a622ad505b7f3cb046495ff7193a8493f8fb06578b66a99ee6815a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yO_Iix-ZsYMm_Cz6G0L_8IO746_qsg3L%22%3B%7D; advanced-backend=nkuur1j2u8lu4qfh71okjckjaf; _csrf-backend=f30d215229890fe0533394bac42515c3aad9d4bb2172343490c3330e1d3827bea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%225VHq45DlCCvUiwa1KHeF2gQ2bcro3p1_%22%3B%7D; _identity-backend=c30d28f707155d51b28ca23b868328845ea2ad25bdc2977f4ba01a92a9e18eaea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223rsD0XwPXfZ6vEYFLV7zSW8_aKvnk3KX%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\web\\Git\\cmd;C:\\web\\;C:\\web\\HashiCorp\\Vagrant\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\web\\Ruby25-x64\\bin;C:\\Users\\RajanB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\RajanB\\AppData\\Roaming\\npm;C:\\composer;C:\\Users\\RajanB\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/korforum.com/backend/web/index.php'
+    'REMOTE_PORT' => '49507'
+    'REDIRECT_URL' => '/korforum.com/backend/web/designation/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/korforum.com/admin/designation/update?id=1'
+    'SCRIPT_NAME' => '/korforum.com/backend/web/index.php'
+    'PHP_SELF' => '/korforum.com/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524037233.525
+    'REQUEST_TIME' => 1524037233
+]
